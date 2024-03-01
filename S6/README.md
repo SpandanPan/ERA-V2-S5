@@ -25,7 +25,7 @@ This gets us the new weights
  *  LR = 0.2
 
    
-![alt text](https://github.com/SpandanPan/ERA-V2-S5/blob/main/S6/BackProp_LR-0.2.png?raw=true)
+![alt text](https://github.com/SpandanPan/ERA-V2-S5/blob/main/S6/BackProo_LR-0.2.png?raw=true)
  *  LR = 0.5
 
 
