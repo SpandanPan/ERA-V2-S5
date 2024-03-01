@@ -17,6 +17,17 @@ This gets us the new weights
 #### Screenshot of the excel file
 ![alt text](https://github.com/SpandanPan/ERA-V2-S5/blob/main/S6/Backprop.png?raw=true)
 
+### Changes in Loss with LR
+ *  LR=0.1
+   ![alt text](https://github.com/SpandanPan/ERA-V2-S5/blob/main/S6/Backprop.png?raw=true)
+ *  LR = 0.2
+   ![alt text](https://github.com/SpandanPan/ERA-V2-S5/blob/main/S6/Backprop.png?raw=true)
+ *  LR = 0.5
+   ![alt text](https://github.com/SpandanPan/ERA-V2-S5/blob/main/S6/Backprop.png?raw=true)
+ *  LR = 1
+   ![alt text](https://github.com/SpandanPan/ERA-V2-S5/blob/main/S6/Backprop.png?raw=true)
+ *  LR = 2
+   ![alt text](https://github.com/SpandanPan/ERA-V2-S5/blob/main/S6/Backprop.png?raw=true)
 ## Part2
 
 #### The notebook for running MNIST is attached
