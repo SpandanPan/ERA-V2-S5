@@ -15,7 +15,7 @@ Once the gradients are calculated, they are updated after multiplying with learn
 This gets us the new weights
 
 #### Screenshot of the excel file
-![alt text](https://github.com/[username]/[reponame]/blob/[mail]/Backprop.jpg?raw=true)
+![alt text](https://github.com/SpandanPan/ERA-V2-S5/blob/main/S6/Backprop.png?raw=true)
 
 ## Part2
 
