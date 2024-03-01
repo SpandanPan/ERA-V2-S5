@@ -14,6 +14,9 @@
 Once the gradients are calculated, they are updated after multiplying with learning rate
 This gets us the new weights
 
+#### Screenshot of the excel file
+![alt text](https://github.com/[username]/[reponame]/blob/[mail]/Backprop.jpg?raw=true)
+
 ## Part2
 
 #### The notebook for running MNIST is attached
