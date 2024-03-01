@@ -5,10 +5,10 @@
 ### Steps to update gradient and parameters
 
  *  Block1: Calculates forward propagation. The error for E1 and E2 are added
-#### Block2: Calculates the gradient of Loss Function with respect to w5(parameter)
-#### Block3: The calculation involves chain rule from E1 (as E2 is not affected by W5) to a_o1 to o1 To w5
-#### Block4: The calulation is done to calculate gradients for weights of innitial layers (w1)
-#### Block 5: Gradient for all weights in innitial layers are calulated
+ *  Block2: Calculates the gradient of Loss Function with respect to w5(parameter)
+ *  Block3: The calculation involves chain rule from E1 (as E2 is not affected by W5) to a_o1 to o1 To w5
+ *  Block4: The calulation is done to calculate gradients for weights of innitial layers (w1)
+ *  Block 5: Gradient for all weights in innitial layers are calulated
 
 #### Updating loss
 Once the gradients are calculated, they are updated after multiplying with learning rate
@@ -22,29 +22,48 @@ This gets us the new weights
 ### Input image size is 28*28
 ### CNN Layers Used
 
-### Layer1 - Conv with 8 channels, kernel 3*3, Padding=0, Stride=0
-### BN used
-### DropOut Used (p=0.1)
-### Layer2 - Conv with 16 channels, kernel 3*3, Padding=0, Stride=0
-### BN Used
-### DropOut Used (p=0.1)
+#### Layer1  
+ * Conv with 16 channels, kernel 3*3, Padding=1, Stride=1
+ * Relu
+ * BN used
+ * DropOut Used (p=0.1)
 
-### Transitional Layer - 
-### 1. MaxPooling (2*2)
-### 2. 1*1 Conv - * channels
-### BN used
-###  Layer3 - Conv with 8 channels, kernel 3*3, Padding=0, Stride=0
-### BN Used
-### Layer4 - Conv with 16 channels, kernel 3*3, Padding=0, Stride=0
-### BN
-### Transitional Layer: Max Pooling
+#### Layer2  
+ * Conv with 32 channels, kernel 3*3, Padding=1, Stride=1
+ * Relu
+ * BN Used
+ * DropOut Used (p=0.1)
 
-### Layer 5 - Conv with 32 channels, kernel 3*3, Padding=0, Stride=0
+#### Transitional Layer 1
+ * MaxPooling (2*2)
+ * 1*1 Conv - 8 o/p channels
 
-### FC Layer 1 - Dim(2*2*32,30)
-### FC Layer 2 -Dim (30,10)
-### Output - Log Softmax
+####  Layer3 
+ * Conv with 24 channels, kernel 3*3, Padding=1, Stride=1
+ * Relu
+ * BN
+#### Layer4
+ * Conv with 30 channels, kernel 3*3, Padding=1, Stride=1
+ * Relu
+ * BN
+#### Transitional Layer 2
+ * Max Pooling (2*2)
+ * *1 Conv - 8 o/p channels
+
+#### Layer 5 
+ * Conv with 16 channels, kernel 3*3, Padding=1, Stride=1
+ * Relu
+ * BN
+
+#### Layer 6
+ * Conv with 30 channels, kernel 3*3, Padding=1, Stride=1
+ * Relu
+ * BN
+
+#### GAP Layer  - Kernel = 7
+#### FC Layer 2 -Dim (30,10)
+#### Output - Log Softmax
 
 ### Other hyperparams
-### LR=0.01
+#### LR=0.01
 
